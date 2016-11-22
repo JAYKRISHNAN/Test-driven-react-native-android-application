@@ -9,7 +9,8 @@ export default class CommentList extends React.Component {
   constructor(props) {
     super(props);
     this.state =  {
-      dataSource: new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2}).cloneWithRows(this.props.data)
+      dataSource: new ListView.DataSource({rowHasChanged: 
+(r1, r2) => r1 !== r2}).cloneWithRows(this.props.data)
     };
   }
   
@@ -27,7 +28,6 @@ export default class CommentList extends React.Component {
         />
     );
   }
-
   renderComment(row) {
     return (
         <Comment author={row.author} >{row.text}</Comment>

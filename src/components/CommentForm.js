@@ -1,16 +1,15 @@
 import React, {Component, View, TouchableNativeFeedback, Text, TextInput} from 'react-native';
-export default class CommentForm extends React.Component {
+
+export default class CommentForm extends React.Component {  
 
   constructor(props) {
     super(props);
     this.state = {name: '', comment: ''};
   }
-
-  static propTypes =  {
+  static propTypes = {
     onCommentSubmit: React.PropTypes.func
   };
 
-  
   render() {
     return(
         <View>
@@ -26,16 +25,15 @@ export default class CommentForm extends React.Component {
            onChangeText={(content) => this.setState({comment: content})}
            value={this.state.comment}
           />
-        <TouchableNativeFeedback
-           onPress={() => this.onPressButton()}>
-           <View style={{width: 150, height: 100, backgroundColor: 'red'}}>
-             <Text style={{margin: 30}}>Submit</Text>
-           </View>
+          <TouchableNativeFeedback
+            onPress={() => this.onPressButton()}>
+            <View style={{width: 150, height: 100, backgroundColor: 'red'}}>
+              <Text style={{margin: 30}}>Submit</Text>
+            </View>
           </TouchableNativeFeedback>
         </View>
     );
   }
-
   onPressButton() {
     var author = this.state.name.trim();
     var comment = this.state.comment.trim();

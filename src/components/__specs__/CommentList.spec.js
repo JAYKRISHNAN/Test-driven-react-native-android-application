@@ -1,10 +1,11 @@
 import React, { View, ListView } from 'react-native';
+
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
 
 import CommentList from '../CommentList.js';
 import Comment from '../Comment.js';
-
+ 
 describe('<CommentList />', () => {
   beforeEach(function() {
     data = [
@@ -19,12 +20,15 @@ describe('<CommentList />', () => {
   });
 
   it('should be a ListView component', () => {
-    const wrapper = shallow(<CommentList data={data} />);
+    const wrapper = shallow(<CommentList />);
+    
     expect(wrapper.type()).to.equal(ListView);
   });
 
-  it('should have correct state datasource', () => {
+  it('should have correct datasource in state', () => {
     const wrapper = shallow(<CommentList data={data} />);
+    
     expect(wrapper.state('dataSource')._dataBlob).to.equal(data);
   });
+
 });

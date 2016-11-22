@@ -384,7 +384,7 @@ export default class CommentList extends React.Component {
   
   render() {
   return (
-  <listview          datasource="{this.state.dataSource}"          renderrow="{this.renderComment.bind(this)}"        ="">
+  <listview          datasource="{this.state.dataSource}"          renderrow="{this.renderComment.bind(this)}"        ="">
   );
   }
   renderComment(row) {
@@ -971,3 +971,62 @@ You can view the entire codebase [here][20] .
 
 * * *
 
+**Finally**
+
+Phew! That was a long exercise. We're proud that you completed it and happy for your learnings. That was mostly about UI testing. We also have sample tests for asynchronous JS code, redux, authentication etc. in our boilerplate. Do check them out. 
+
+TDD provides a tight feedback loop that cranks up our development workflow and improves quality and maintainability of code. TDD is one among many engineering practises that we follow here at Multunus. There are other practises that we follow, like [Continous Integration][21] and guess what. We've started integrating these concepts into our boilerplate too. Do checkout our blogpost about [Automated environment management in React Native – iOS][22].
+
+## Contributing
+
+See the [CONTRIBUTING] document.
+Thank you, [contributors]!
+
+  [CONTRIBUTING]: CONTRIBUTING.md
+  [contributors]: https://github.com/multunus/$(REPO_NAME)/graphs/contributors
+
+## License
+
+React Native Boilerplate is Copyright (c) 2016 Multunus Software Pvt. Ltd.
+It is free software, and may be redistributed
+under the terms specified in the [LICENSE] file.
+
+  [LICENSE]: /LICENSE
+
+## About
+
+![multunus](https://s3.amazonaws.com/multunus-images/Multunus_Logo_Vector_resized.png)
+
+React Native Boilerplate is maintained and funded by Multunus Software Pvt. Ltd.
+The names and logos for Multunus are trademarks of Multunus Software Pvt. Ltd.
+
+We love open source software!
+See [our other projects][community]
+or [hire us][hire] to help build your product.
+
+  [community]: http://www.multunus.com/community?utm_source=github
+  [hire]: http://www.multunus.com/contact?utm_source=github
+
+
+[1]: https://babeljs.io/
+[2]: https://mochajs.org/
+[3]: https://nodejs.org/en/
+[4]: http://chaijs.com/
+[5]: http://sinonjs.org/
+[6]: https://github.com/lelandrichardson/react-native-mock
+[7]: http://airbnb.io/enzyme/
+[8]: https://github.com/multunus/react-native-boilerplate
+[9]: https://github.com/auth0/nodejs-jwt-authentication-sample
+[10]: https://facebook.github.io/react/
+[11]: https://facebook.github.io/react/docs/tutorial.html
+[12]: https://en.wikipedia.org/wiki/Test-driven_development
+[13]: https://facebook.github.io/react-native/docs/asyncstorage.html
+[14]: http://airbnb.io/enzyme/docs/api/shallow.html
+[15]: https://github.com/airbnb/enzyme
+[16]: http://www.jamesshore.com/Blog/Red-Green-Refactor.html
+[17]: https://facebook.github.io/react-native/docs/listview.html
+[18]: https://facebook.github.io/react/docs/reusable-components.html
+[19]: http://airbnb.io/enzyme/docs/api/ShallowWrapper/simulate.html
+[20]: https://github.com/multunus/React-Native-TDD-Tutorial
+[21]: https://www.thoughtworks.com/continuous-integration
+[22]: http://www.multunus.com/blog/2016/06/automated-environment-management-react-native-ios/
