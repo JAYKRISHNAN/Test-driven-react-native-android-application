@@ -1,4 +1,4 @@
-# Multunus | Test driving react native applications
+# Test driving react native applications
 
 React Native is a game changing mobile app development framework that concentrates on fast development. Based on the philosophy "Learn once, write anywhere", it makes it possible to build IOS, Android and Windows mobile apps just using Javascript.
 
